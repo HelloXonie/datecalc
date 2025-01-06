@@ -1,7 +1,9 @@
 #!/bin/python3
 
+import time
 from datetime import date
-#from os_sys.progress import bar
+from tqdm import tqdm
+from time import sleep
 
 #get the current date and subtract from the future date
 today = date.today()
@@ -11,13 +13,9 @@ remaining_days = str(future - today)
 
 print (remaining_days)
 
-#progress bar
-#bar = Bar ('Processing', max=20)
-#for i in range(20):
-#    bar.next()
-#bar.finish()
+for i in tqdm(range(10)):
+    time.sleep (0.1)
 
-#print (bar)
 
 
 
