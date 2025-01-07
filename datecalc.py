@@ -22,6 +22,8 @@ sys.stdout = output
 bar = progressbar.ProgressBar(maxval=100, \
     widgets = [progressbar.Bar('=', '[', ']'), ' ', progressbar.Percentage()])
 bar.start()
+
+with open('log_file.txt','w') as log_file
 for i in (range(20), file = log_file):
     bar.update(i+1)
     sleep(0.1)
